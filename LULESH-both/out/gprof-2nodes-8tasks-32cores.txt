@@ -1,0 +1,419 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 23.75     84.06    84.06    16248     5.17    13.21  _INTERNAL66fca82d::LagrangeNodal(Domain&)
+ 21.64    160.64    76.58    16248     4.71     4.71  _INTERNAL66fca82d::CalcFBHourglassForceForElems(Domain&, double*, double*, double*, double*, double*, double*, double*, double, int, int)
+ 16.63    219.51    58.86   178728     0.33     0.33  _INTERNAL66fca82d::EvalEOSForElems(Domain&, double*, int, int*, int)
+ 14.76    271.74    52.23    16248     3.21     3.21  _INTERNAL66fca82d::IntegrateStressForElems(Domain&, double*, double*, double*, double*, int, int)
+  9.99    307.09    35.35    16248     2.18     2.18  CalcKinematicsForElems(Domain&, double, int)
+  9.69    341.38    34.29    16248     2.11     2.16  _INTERNAL66fca82d::CalcQForElems(Domain&)
+  1.72    347.47     6.09                             main
+  1.10    351.35     3.88                             __libm_cbrt_l9
+  0.27    352.29     0.94    48752     0.02     0.03  CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool)
+  0.09    352.62     0.33    16256     0.02     0.03  CommSBN(Domain&, int, double& (Domain::**)(int))
+  0.05    352.79     0.17    16248     0.01     0.02  CommSyncPosVel(Domain&)
+  0.05    352.96     0.17    16248     0.01     0.02  CommMonoQ(Domain&)
+  0.04    353.11     0.16 87739200     0.00     0.00  Domain::delv_zeta(int)
+  0.03    353.23     0.12 87739200     0.00     0.00  Domain::delv_eta(int)
+  0.02    353.31     0.09 96740592     0.00     0.00  Domain::fx(int)
+  0.02    353.39     0.08 96740592     0.00     0.00  Domain::fy(int)
+  0.02    353.46     0.08 87739200     0.00     0.00  Domain::delv_xi(int)
+  0.02    353.53     0.07 48370296     0.00     0.00  Domain::x(int)
+  0.02    353.60     0.07                             cbrt
+  0.02    353.66     0.06 48370296     0.00     0.00  Domain::zd(int)
+  0.01    353.71     0.05 48370296     0.00     0.00  Domain::yd(int)
+  0.01    353.75     0.05 48370296     0.00     0.00  Domain::xd(int)
+  0.01    353.80     0.05    47632     0.00     0.00  Domain::nodalMass(int)
+  0.01    353.83     0.04 48370296     0.00     0.00  Domain::y(int)
+  0.01    353.86     0.03 96740592     0.00     0.00  Domain::fz(int)
+  0.01    353.89     0.03 48370296     0.00     0.00  Domain::z(int)
+  0.00    353.90     0.01   216008     0.00     0.00  CalcElemVolume(double const*, double const*, double const*)
+  0.00    353.91     0.01        8     1.25     2.50  Domain::Domain(int, int, int, int, int, int, int, int, int)
+  0.00    353.92     0.01                             _intel_fast_memset
+  0.00    353.92     0.00    48752     0.00     0.00  CommRecv(Domain&, int, int, int, int, int, bool, bool)
+  0.00    353.92     0.00      208     0.00     0.00  std::vector<double, std::allocator<double> >::vector()
+  0.00    353.92     0.00      184     0.00     0.00  std::vector<double, std::allocator<double> >::_M_default_append(unsigned long)
+  0.00    353.92     0.00       88     0.00     0.00  std::vector<int, std::allocator<int> >::vector()
+  0.00    353.92     0.00       48     0.00     0.00  std::vector<int, std::allocator<int> >::_M_default_append(unsigned long)
+  0.00    353.92     0.00        9     0.00     0.00  VerifyAndWriteFinalOutput(double, Domain&, int, int)
+  0.00    353.92     0.00        8     0.00     0.00  InitMeshDecomp(int, int, int*, int*, int*, int*)
+  0.00    353.92     0.00        8     0.00     0.00  ParseCommandLineOptions(int, char**, int, cmdLineOpts*)
+  0.00    353.92     0.00        8     0.00     0.00  Domain::SetupCommBuffers(int)
+  0.00    353.92     0.00        8     0.00     0.00  Domain::CreateRegionIndexSets(int, int)
+  0.00    353.92     0.00        8     0.00     0.00  Domain::AllocateElemPersistent(int)
+  0.00    353.92     0.00        8     0.00     0.00  Domain::AllocateNodePersistent(int)
+  0.00    353.92     0.00        8     0.00     0.00  Domain::SetupBoundaryConditions(int)
+  0.00    353.92     0.00        8     0.00     0.00  Domain::SetupElementConnectivities(int)
+  0.00    353.92     0.00        8     0.00     0.00  Domain::SetupThreadSupportStructures()
+  0.00    353.92     0.00        8     0.00     0.00  Domain::~Domain()
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2016 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.00% of 353.92 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     98.9    6.09  343.88                 main [1]
+               84.06  130.49   16248/16248       _INTERNAL66fca82d::LagrangeNodal(Domain&) [2]
+               58.86    0.00  178728/178728      _INTERNAL66fca82d::EvalEOSForElems(Domain&, double*, int, int*, int) [4]
+               35.35    0.00   16248/16248       CalcKinematicsForElems(Domain&, double, int) [6]
+               34.29    0.80   16248/16248       _INTERNAL66fca82d::CalcQForElems(Domain&) [7]
+                0.01    0.01       8/8           Domain::Domain(int, int, int, int, int, int, int, int, int) [27]
+                0.00    0.00       8/48752       CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+                0.00    0.00       8/16256       CommSBN(Domain&, int, double& (Domain::**)(int)) [10]
+                0.00    0.00       8/8           ParseCommandLineOptions(int, char**, int, cmdLineOpts*) [45]
+                0.00    0.00       8/8           InitMeshDecomp(int, int, int*, int*, int*, int*) [44]
+                0.00    0.00       8/48752       CommRecv(Domain&, int, int, int, int, int, bool, bool) [38]
+                0.00    0.00       8/8           Domain::~Domain() [53]
+                0.00    0.00       1/9           VerifyAndWriteFinalOutput(double, Domain&, int, int) [43]
+-----------------------------------------------
+               84.06  130.49   16248/16248       main [1]
+[2]     60.6   84.06  130.49   16248         _INTERNAL66fca82d::LagrangeNodal(Domain&) [2]
+               76.58    0.00   16248/16248       _INTERNAL66fca82d::CalcFBHourglassForceForElems(Domain&, double*, double*, double*, double*, double*, double*, double*, double, int, int) [3]
+               52.23    0.00   16248/16248       _INTERNAL66fca82d::IntegrateStressForElems(Domain&, double*, double*, double*, double*, int, int) [5]
+                0.63    0.29   32496/48752       CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+                0.33    0.12   16248/16256       CommSBN(Domain&, int, double& (Domain::**)(int)) [10]
+                0.17    0.15   16248/16248       CommSyncPosVel(Domain&) [12]
+                0.00    0.00   32496/48752       CommRecv(Domain&, int, int, int, int, int, bool, bool) [38]
+-----------------------------------------------
+               76.58    0.00   16248/16248       _INTERNAL66fca82d::LagrangeNodal(Domain&) [2]
+[3]     21.6   76.58    0.00   16248         _INTERNAL66fca82d::CalcFBHourglassForceForElems(Domain&, double*, double*, double*, double*, double*, double*, double*, double, int, int) [3]
+-----------------------------------------------
+               58.86    0.00  178728/178728      main [1]
+[4]     16.6   58.86    0.00  178728         _INTERNAL66fca82d::EvalEOSForElems(Domain&, double*, int, int*, int) [4]
+-----------------------------------------------
+               52.23    0.00   16248/16248       _INTERNAL66fca82d::LagrangeNodal(Domain&) [2]
+[5]     14.8   52.23    0.00   16248         _INTERNAL66fca82d::IntegrateStressForElems(Domain&, double*, double*, double*, double*, int, int) [5]
+-----------------------------------------------
+               35.35    0.00   16248/16248       main [1]
+[6]     10.0   35.35    0.00   16248         CalcKinematicsForElems(Domain&, double, int) [6]
+-----------------------------------------------
+               34.29    0.80   16248/16248       main [1]
+[7]      9.9   34.29    0.80   16248         _INTERNAL66fca82d::CalcQForElems(Domain&) [7]
+                0.31    0.14   16248/48752       CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+                0.17    0.17   16248/16248       CommMonoQ(Domain&) [11]
+                0.00    0.00   16248/48752       CommRecv(Domain&, int, int, int, int, int, bool, bool) [38]
+-----------------------------------------------
+                                                 <spontaneous>
+[8]      1.1    3.88    0.00                 __libm_cbrt_l9 [8]
+-----------------------------------------------
+                0.00    0.00       8/48752       main [1]
+                0.31    0.14   16248/48752       _INTERNAL66fca82d::CalcQForElems(Domain&) [7]
+                0.63    0.29   32496/48752       _INTERNAL66fca82d::LagrangeNodal(Domain&) [2]
+[9]      0.4    0.94    0.44   48752         CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+                0.08    0.00 43869600/87739200     Domain::delv_zeta(int) [13]
+                0.06    0.00 43869600/87739200     Domain::delv_eta(int) [14]
+                0.04    0.00 48370296/96740592     Domain::fx(int) [15]
+                0.04    0.00 48370296/96740592     Domain::fy(int) [16]
+                0.04    0.00 43869600/87739200     Domain::delv_xi(int) [17]
+                0.04    0.00 24185148/48370296     Domain::x(int) [18]
+                0.03    0.00 24185148/48370296     Domain::zd(int) [20]
+                0.03    0.00 24185148/48370296     Domain::yd(int) [21]
+                0.02    0.00 24185148/48370296     Domain::xd(int) [22]
+                0.02    0.00   23816/47632       Domain::nodalMass(int) [23]
+                0.02    0.00 24185148/48370296     Domain::y(int) [24]
+                0.02    0.00 48370296/96740592     Domain::fz(int) [25]
+                0.02    0.00 24185148/48370296     Domain::z(int) [26]
+-----------------------------------------------
+                0.00    0.00       8/16256       main [1]
+                0.33    0.12   16248/16256       _INTERNAL66fca82d::LagrangeNodal(Domain&) [2]
+[10]     0.1    0.33    0.12   16256         CommSBN(Domain&, int, double& (Domain::**)(int)) [10]
+                0.04    0.00 48370296/96740592     Domain::fx(int) [15]
+                0.04    0.00 48370296/96740592     Domain::fy(int) [16]
+                0.02    0.00   23816/47632       Domain::nodalMass(int) [23]
+                0.02    0.00 48370296/96740592     Domain::fz(int) [25]
+-----------------------------------------------
+                0.17    0.17   16248/16248       _INTERNAL66fca82d::CalcQForElems(Domain&) [7]
+[11]     0.1    0.17    0.17   16248         CommMonoQ(Domain&) [11]
+                0.08    0.00 43869600/87739200     Domain::delv_zeta(int) [13]
+                0.06    0.00 43869600/87739200     Domain::delv_eta(int) [14]
+                0.04    0.00 43869600/87739200     Domain::delv_xi(int) [17]
+-----------------------------------------------
+                0.17    0.15   16248/16248       _INTERNAL66fca82d::LagrangeNodal(Domain&) [2]
+[12]     0.1    0.17    0.15   16248         CommSyncPosVel(Domain&) [12]
+                0.04    0.00 24185148/48370296     Domain::x(int) [18]
+                0.03    0.00 24185148/48370296     Domain::zd(int) [20]
+                0.03    0.00 24185148/48370296     Domain::yd(int) [21]
+                0.02    0.00 24185148/48370296     Domain::xd(int) [22]
+                0.02    0.00 24185148/48370296     Domain::y(int) [24]
+                0.02    0.00 24185148/48370296     Domain::z(int) [26]
+-----------------------------------------------
+                0.08    0.00 43869600/87739200     CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+                0.08    0.00 43869600/87739200     CommMonoQ(Domain&) [11]
+[13]     0.0    0.16    0.00 87739200         Domain::delv_zeta(int) [13]
+-----------------------------------------------
+                0.06    0.00 43869600/87739200     CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+                0.06    0.00 43869600/87739200     CommMonoQ(Domain&) [11]
+[14]     0.0    0.12    0.00 87739200         Domain::delv_eta(int) [14]
+-----------------------------------------------
+                0.04    0.00 48370296/96740592     CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+                0.04    0.00 48370296/96740592     CommSBN(Domain&, int, double& (Domain::**)(int)) [10]
+[15]     0.0    0.09    0.00 96740592         Domain::fx(int) [15]
+-----------------------------------------------
+                0.04    0.00 48370296/96740592     CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+                0.04    0.00 48370296/96740592     CommSBN(Domain&, int, double& (Domain::**)(int)) [10]
+[16]     0.0    0.08    0.00 96740592         Domain::fy(int) [16]
+-----------------------------------------------
+                0.04    0.00 43869600/87739200     CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+                0.04    0.00 43869600/87739200     CommMonoQ(Domain&) [11]
+[17]     0.0    0.08    0.00 87739200         Domain::delv_xi(int) [17]
+-----------------------------------------------
+                0.04    0.00 24185148/48370296     CommSyncPosVel(Domain&) [12]
+                0.04    0.00 24185148/48370296     CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+[18]     0.0    0.07    0.00 48370296         Domain::x(int) [18]
+-----------------------------------------------
+                                                 <spontaneous>
+[19]     0.0    0.07    0.00                 cbrt [19]
+-----------------------------------------------
+                0.03    0.00 24185148/48370296     CommSyncPosVel(Domain&) [12]
+                0.03    0.00 24185148/48370296     CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+[20]     0.0    0.06    0.00 48370296         Domain::zd(int) [20]
+-----------------------------------------------
+                0.03    0.00 24185148/48370296     CommSyncPosVel(Domain&) [12]
+                0.03    0.00 24185148/48370296     CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+[21]     0.0    0.05    0.00 48370296         Domain::yd(int) [21]
+-----------------------------------------------
+                0.02    0.00 24185148/48370296     CommSyncPosVel(Domain&) [12]
+                0.02    0.00 24185148/48370296     CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+[22]     0.0    0.05    0.00 48370296         Domain::xd(int) [22]
+-----------------------------------------------
+                0.02    0.00   23816/47632       CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+                0.02    0.00   23816/47632       CommSBN(Domain&, int, double& (Domain::**)(int)) [10]
+[23]     0.0    0.05    0.00   47632         Domain::nodalMass(int) [23]
+-----------------------------------------------
+                0.02    0.00 24185148/48370296     CommSyncPosVel(Domain&) [12]
+                0.02    0.00 24185148/48370296     CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+[24]     0.0    0.04    0.00 48370296         Domain::y(int) [24]
+-----------------------------------------------
+                0.02    0.00 48370296/96740592     CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+                0.02    0.00 48370296/96740592     CommSBN(Domain&, int, double& (Domain::**)(int)) [10]
+[25]     0.0    0.03    0.00 96740592         Domain::fz(int) [25]
+-----------------------------------------------
+                0.02    0.00 24185148/48370296     CommSyncPosVel(Domain&) [12]
+                0.02    0.00 24185148/48370296     CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [9]
+[26]     0.0    0.03    0.00 48370296         Domain::z(int) [26]
+-----------------------------------------------
+                0.01    0.01       8/8           main [1]
+[27]     0.0    0.01    0.01       8         Domain::Domain(int, int, int, int, int, int, int, int, int) [27]
+                0.01    0.00  216000/216008      CalcElemVolume(double const*, double const*, double const*) [28]
+                0.00    0.00     208/208         std::vector<double, std::allocator<double> >::vector() [39]
+                0.00    0.00      88/88          std::vector<int, std::allocator<int> >::vector() [41]
+                0.00    0.00       8/184         std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [40]
+                0.00    0.00       8/8           Domain::AllocateElemPersistent(int) [48]
+                0.00    0.00       8/8           Domain::AllocateNodePersistent(int) [49]
+                0.00    0.00       8/8           Domain::SetupCommBuffers(int) [46]
+                0.00    0.00       8/8           Domain::SetupThreadSupportStructures() [52]
+                0.00    0.00       8/8           Domain::CreateRegionIndexSets(int, int) [47]
+                0.00    0.00       8/8           Domain::SetupBoundaryConditions(int) [50]
+                0.00    0.00       8/8           Domain::SetupElementConnectivities(int) [51]
+-----------------------------------------------
+                0.00    0.00       8/216008      __libc_csu_init [30]
+                0.01    0.00  216000/216008      Domain::Domain(int, int, int, int, int, int, int, int, int) [27]
+[28]     0.0    0.01    0.00  216008         CalcElemVolume(double const*, double const*, double const*) [28]
+-----------------------------------------------
+                                                 <spontaneous>
+[29]     0.0    0.01    0.00                 _intel_fast_memset [29]
+-----------------------------------------------
+                                                 <spontaneous>
+[30]     0.0    0.00    0.00                 __libc_csu_init [30]
+                0.00    0.00       8/216008      CalcElemVolume(double const*, double const*, double const*) [28]
+                0.00    0.00       8/9           VerifyAndWriteFinalOutput(double, Domain&, int, int) [43]
+-----------------------------------------------
+                0.00    0.00       8/48752       main [1]
+                0.00    0.00   16248/48752       _INTERNAL66fca82d::CalcQForElems(Domain&) [7]
+                0.00    0.00   32496/48752       _INTERNAL66fca82d::LagrangeNodal(Domain&) [2]
+[38]     0.0    0.00    0.00   48752         CommRecv(Domain&, int, int, int, int, int, bool, bool) [38]
+-----------------------------------------------
+                0.00    0.00     208/208         Domain::Domain(int, int, int, int, int, int, int, int, int) [27]
+[39]     0.0    0.00    0.00     208         std::vector<double, std::allocator<double> >::vector() [39]
+-----------------------------------------------
+                0.00    0.00       8/184         Domain::Domain(int, int, int, int, int, int, int, int, int) [27]
+                0.00    0.00      80/184         Domain::AllocateNodePersistent(int) [49]
+                0.00    0.00      96/184         Domain::AllocateElemPersistent(int) [48]
+[40]     0.0    0.00    0.00     184         std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [40]
+-----------------------------------------------
+                0.00    0.00      88/88          Domain::Domain(int, int, int, int, int, int, int, int, int) [27]
+[41]     0.0    0.00    0.00      88         std::vector<int, std::allocator<int> >::vector() [41]
+-----------------------------------------------
+                0.00    0.00      48/48          Domain::AllocateElemPersistent(int) [48]
+[42]     0.0    0.00    0.00      48         std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [42]
+-----------------------------------------------
+                0.00    0.00       1/9           main [1]
+                0.00    0.00       8/9           __libc_csu_init [30]
+[43]     0.0    0.00    0.00       9         VerifyAndWriteFinalOutput(double, Domain&, int, int) [43]
+-----------------------------------------------
+                0.00    0.00       8/8           main [1]
+[44]     0.0    0.00    0.00       8         InitMeshDecomp(int, int, int*, int*, int*, int*) [44]
+-----------------------------------------------
+                0.00    0.00       8/8           main [1]
+[45]     0.0    0.00    0.00       8         ParseCommandLineOptions(int, char**, int, cmdLineOpts*) [45]
+-----------------------------------------------
+                0.00    0.00       8/8           Domain::Domain(int, int, int, int, int, int, int, int, int) [27]
+[46]     0.0    0.00    0.00       8         Domain::SetupCommBuffers(int) [46]
+-----------------------------------------------
+                0.00    0.00       8/8           Domain::Domain(int, int, int, int, int, int, int, int, int) [27]
+[47]     0.0    0.00    0.00       8         Domain::CreateRegionIndexSets(int, int) [47]
+-----------------------------------------------
+                0.00    0.00       8/8           Domain::Domain(int, int, int, int, int, int, int, int, int) [27]
+[48]     0.0    0.00    0.00       8         Domain::AllocateElemPersistent(int) [48]
+                0.00    0.00      96/184         std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [40]
+                0.00    0.00      48/48          std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [42]
+-----------------------------------------------
+                0.00    0.00       8/8           Domain::Domain(int, int, int, int, int, int, int, int, int) [27]
+[49]     0.0    0.00    0.00       8         Domain::AllocateNodePersistent(int) [49]
+                0.00    0.00      80/184         std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [40]
+-----------------------------------------------
+                0.00    0.00       8/8           Domain::Domain(int, int, int, int, int, int, int, int, int) [27]
+[50]     0.0    0.00    0.00       8         Domain::SetupBoundaryConditions(int) [50]
+-----------------------------------------------
+                0.00    0.00       8/8           Domain::Domain(int, int, int, int, int, int, int, int, int) [27]
+[51]     0.0    0.00    0.00       8         Domain::SetupElementConnectivities(int) [51]
+-----------------------------------------------
+                0.00    0.00       8/8           Domain::Domain(int, int, int, int, int, int, int, int, int) [27]
+[52]     0.0    0.00    0.00       8         Domain::SetupThreadSupportStructures() [52]
+-----------------------------------------------
+                0.00    0.00       8/8           main [1]
+[53]     0.0    0.00    0.00       8         Domain::~Domain() [53]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2016 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [28] CalcElemVolume(double const*, double const*, double const*) [46] Domain::SetupCommBuffers(int) [20] Domain::zd(int)
+  [12] CommSyncPosVel(Domain&) [18] Domain::x(int)        [17] Domain::delv_xi(int)
+  [44] InitMeshDecomp(int, int, int*, int*, int*, int*) [24] Domain::y(int) [14] Domain::delv_eta(int)
+   [6] CalcKinematicsForElems(Domain&, double, int) [26] Domain::z(int) [13] Domain::delv_zeta(int)
+  [45] ParseCommandLineOptions(int, char**, int, cmdLineOpts*) [47] Domain::CreateRegionIndexSets(int, int) [23] Domain::nodalMass(int)
+  [43] VerifyAndWriteFinalOutput(double, Domain&, int, int) [48] Domain::AllocateElemPersistent(int) [27] Domain::Domain(int, int, int, int, int, int, int, int, int)
+  [10] CommSBN(Domain&, int, double& (Domain::**)(int)) [49] Domain::AllocateNodePersistent(int) [53] Domain::~Domain()
+  [38] CommRecv(Domain&, int, int, int, int, int, bool, bool) [50] Domain::SetupBoundaryConditions(int) [40] std::vector<double, std::allocator<double> >::_M_default_append(unsigned long)
+   [9] CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [51] Domain::SetupElementConnectivities(int) [39] std::vector<double, std::allocator<double> >::vector()
+  [11] CommMonoQ(Domain&)     [52] Domain::SetupThreadSupportStructures() [42] std::vector<int, std::allocator<int> >::_M_default_append(unsigned long)
+   [7] _INTERNAL66fca82d::CalcQForElems(Domain&) [15] Domain::fx(int) [41] std::vector<int, std::allocator<int> >::vector()
+   [2] _INTERNAL66fca82d::LagrangeNodal(Domain&) [16] Domain::fy(int) [8] __libm_cbrt_l9
+   [4] _INTERNAL66fca82d::EvalEOSForElems(Domain&, double*, int, int*, int) [25] Domain::fz(int) [29] _intel_fast_memset
+   [5] _INTERNAL66fca82d::IntegrateStressForElems(Domain&, double*, double*, double*, double*, int, int) [22] Domain::xd(int) [19] cbrt
+   [3] _INTERNAL66fca82d::CalcFBHourglassForceForElems(Domain&, double*, double*, double*, double*, double*, double*, double*, double, int, int) [21] Domain::yd(int) [1] main

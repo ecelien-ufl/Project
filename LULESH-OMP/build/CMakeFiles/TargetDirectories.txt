@@ -1,0 +1,3 @@
+/home/brianlien/Project/LULESH-OMP/build/CMakeFiles/rebuild_cache.dir
+/home/brianlien/Project/LULESH-OMP/build/CMakeFiles/edit_cache.dir
+/home/brianlien/Project/LULESH-OMP/build/CMakeFiles/lulesh2.0.dir
