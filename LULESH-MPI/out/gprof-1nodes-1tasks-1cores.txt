@@ -3,34 +3,34 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  ms/call  ms/call  name    
- 28.68      7.28     7.28    10252     0.71     0.71  _INTERNALf89c2761::EvalEOSForElems(Domain&, double*, int, int*, int)
- 23.72     13.30     6.02      932     6.46    13.19  _INTERNALf89c2761::LagrangeNodal(Domain&)
- 15.80     17.31     4.01      932     4.30     4.30  _INTERNALf89c2761::CalcFBHourglassForceForElems(Domain&, double*, double*, double*, double*, double*, double*, double*, double, int, int)
- 11.11     20.13     2.82      932     3.03     3.03  CalcKinematicsForElems(Domain&, double, int)
-  8.90     22.39     2.26      932     2.42     2.42  _INTERNALf89c2761::IntegrateStressForElems(Domain&, double*, double*, double*, double*, int, int)
-  6.03     23.92     1.53      932     1.64     1.64  _INTERNALf89c2761::CalcMonotonicQGradientsForElems(Domain&)
-  3.15     24.72     0.80    10252     0.08     0.08  _INTERNALf89c2761::CalcMonotonicQRegionForElems(Domain&, int, double)
-  1.50     25.10     0.38                             __libm_cbrt_l9
-  1.10     25.38     0.28                             main
-  0.00     25.38     0.00    27001     0.00     0.00  CalcElemVolume(double const*, double const*, double const*)
-  0.00     25.38     0.00     2797     0.00     0.00  CommRecv(Domain&, int, int, int, int, int, bool, bool)
-  0.00     25.38     0.00     2797     0.00     0.00  CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool)
-  0.00     25.38     0.00      933     0.00     0.00  CommSBN(Domain&, int, double& (Domain::**)(int))
-  0.00     25.38     0.00      932     0.00     0.00  CommSyncPosVel(Domain&)
-  0.00     25.38     0.00      932     0.00     0.00  CommMonoQ(Domain&)
-  0.00     25.38     0.00       26     0.00     0.00  std::vector<double, std::allocator<double> >::vector()
-  0.00     25.38     0.00       23     0.00     0.00  std::vector<double, std::allocator<double> >::_M_default_append(unsigned long)
-  0.00     25.38     0.00       11     0.00     0.00  std::vector<int, std::allocator<int> >::vector()
-  0.00     25.38     0.00        6     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::~_Vector_base()
-  0.00     25.38     0.00        6     0.00     0.00  std::vector<int, std::allocator<int> >::_M_default_append(unsigned long)
-  0.00     25.38     0.00        2     0.00     0.00  VerifyAndWriteFinalOutput(double, Domain&, int, int)
-  0.00     25.38     0.00        1     0.00     0.00  InitMeshDecomp(int, int, int*, int*, int*, int*)
-  0.00     25.38     0.00        1     0.00     0.00  ParseCommandLineOptions(int, char**, int, cmdLineOpts*)
-  0.00     25.38     0.00        1     0.00     0.00  Domain::SetupCommBuffers(int)
-  0.00     25.38     0.00        1     0.00     0.00  Domain::AllocateElemPersistent(int)
-  0.00     25.38     0.00        1     0.00     0.00  Domain::AllocateNodePersistent(int)
-  0.00     25.38     0.00        1     0.00     0.00  Domain::Domain(int, int, int, int, int, int, int, int, int)
-  0.00     25.38     0.00        1     0.00     0.00  Domain::~Domain()
+ 27.58      6.69     6.69    10252     0.65     0.65  _INTERNALf89c2761::EvalEOSForElems(Domain&, double*, int, int*, int)
+ 23.87     12.48     5.79      932     6.21    12.47  _INTERNALf89c2761::LagrangeNodal(Domain&)
+ 15.13     16.15     3.67      932     3.94     3.94  _INTERNALf89c2761::CalcFBHourglassForceForElems(Domain&, double*, double*, double*, double*, double*, double*, double*, double, int, int)
+ 11.09     18.84     2.69      932     2.89     2.89  CalcKinematicsForElems(Domain&, double, int)
+  8.90     21.00     2.16      932     2.32     2.32  _INTERNALf89c2761::IntegrateStressForElems(Domain&, double*, double*, double*, double*, int, int)
+  6.80     22.65     1.65      932     1.77     1.77  _INTERNALf89c2761::CalcMonotonicQGradientsForElems(Domain&)
+  2.68     23.30     0.65    10252     0.06     0.06  _INTERNALf89c2761::CalcMonotonicQRegionForElems(Domain&, int, double)
+  2.10     23.81     0.51                             __libm_cbrt_l9
+  1.85     24.26     0.45                             main
+  0.00     24.26     0.00    27001     0.00     0.00  CalcElemVolume(double const*, double const*, double const*)
+  0.00     24.26     0.00     2797     0.00     0.00  CommRecv(Domain&, int, int, int, int, int, bool, bool)
+  0.00     24.26     0.00     2797     0.00     0.00  CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool)
+  0.00     24.26     0.00      933     0.00     0.00  CommSBN(Domain&, int, double& (Domain::**)(int))
+  0.00     24.26     0.00      932     0.00     0.00  CommSyncPosVel(Domain&)
+  0.00     24.26     0.00      932     0.00     0.00  CommMonoQ(Domain&)
+  0.00     24.26     0.00       26     0.00     0.00  std::vector<double, std::allocator<double> >::vector()
+  0.00     24.26     0.00       23     0.00     0.00  std::vector<double, std::allocator<double> >::_M_default_append(unsigned long)
+  0.00     24.26     0.00       11     0.00     0.00  std::vector<int, std::allocator<int> >::vector()
+  0.00     24.26     0.00        6     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::~_Vector_base()
+  0.00     24.26     0.00        6     0.00     0.00  std::vector<int, std::allocator<int> >::_M_default_append(unsigned long)
+  0.00     24.26     0.00        2     0.00     0.00  VerifyAndWriteFinalOutput(double, Domain&, int, int)
+  0.00     24.26     0.00        1     0.00     0.00  InitMeshDecomp(int, int, int*, int*, int*, int*)
+  0.00     24.26     0.00        1     0.00     0.00  ParseCommandLineOptions(int, char**, int, cmdLineOpts*)
+  0.00     24.26     0.00        1     0.00     0.00  Domain::SetupCommBuffers(int)
+  0.00     24.26     0.00        1     0.00     0.00  Domain::AllocateElemPersistent(int)
+  0.00     24.26     0.00        1     0.00     0.00  Domain::AllocateNodePersistent(int)
+  0.00     24.26     0.00        1     0.00     0.00  Domain::Domain(int, int, int, int, int, int, int, int, int)
+  0.00     24.26     0.00        1     0.00     0.00  Domain::~Domain()
 
  %         the percentage of the total running time of the
 time       program used by this function.
@@ -68,16 +68,16 @@ notice and this notice are preserved.
 		     Call graph (explanation follows)
 
 
-granularity: each sample hit covers 2 byte(s) for 0.04% of 25.38 seconds
+granularity: each sample hit covers 2 byte(s) for 0.04% of 24.26 seconds
 
 index % time    self  children    called     name
                                                  <spontaneous>
-[1]     98.5    0.28   24.72                 main [1]
-                6.02    6.27     932/932         _INTERNALf89c2761::LagrangeNodal(Domain&) [2]
-                7.28    0.00   10252/10252       _INTERNALf89c2761::EvalEOSForElems(Domain&, double*, int, int*, int) [3]
-                2.82    0.00     932/932         CalcKinematicsForElems(Domain&, double, int) [5]
-                1.53    0.00     932/932         _INTERNALf89c2761::CalcMonotonicQGradientsForElems(Domain&) [7]
-                0.80    0.00   10252/10252       _INTERNALf89c2761::CalcMonotonicQRegionForElems(Domain&, int, double) [8]
+[1]     97.9    0.45   23.30                 main [1]
+                5.79    5.83     932/932         _INTERNALf89c2761::LagrangeNodal(Domain&) [2]
+                6.69    0.00   10252/10252       _INTERNALf89c2761::EvalEOSForElems(Domain&, double*, int, int*, int) [3]
+                2.69    0.00     932/932         CalcKinematicsForElems(Domain&, double, int) [5]
+                1.65    0.00     932/932         _INTERNALf89c2761::CalcMonotonicQGradientsForElems(Domain&) [7]
+                0.65    0.00   10252/10252       _INTERNALf89c2761::CalcMonotonicQRegionForElems(Domain&, int, double) [8]
                 0.00    0.00     933/2797        CommRecv(Domain&, int, int, int, int, int, bool, bool) [19]
                 0.00    0.00     933/2797        CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [20]
                 0.00    0.00     932/932         CommMonoQ(Domain&) [23]
@@ -88,35 +88,35 @@ index % time    self  children    called     name
                 0.00    0.00       1/1           Domain::~Domain() [36]
                 0.00    0.00       1/2           VerifyAndWriteFinalOutput(double, Domain&, int, int) [29]
 -----------------------------------------------
-                6.02    6.27     932/932         main [1]
-[2]     48.4    6.02    6.27     932         _INTERNALf89c2761::LagrangeNodal(Domain&) [2]
-                4.01    0.00     932/932         _INTERNALf89c2761::CalcFBHourglassForceForElems(Domain&, double*, double*, double*, double*, double*, double*, double*, double, int, int) [4]
-                2.26    0.00     932/932         _INTERNALf89c2761::IntegrateStressForElems(Domain&, double*, double*, double*, double*, int, int) [6]
+                5.79    5.83     932/932         main [1]
+[2]     47.9    5.79    5.83     932         _INTERNALf89c2761::LagrangeNodal(Domain&) [2]
+                3.67    0.00     932/932         _INTERNALf89c2761::CalcFBHourglassForceForElems(Domain&, double*, double*, double*, double*, double*, double*, double*, double, int, int) [4]
+                2.16    0.00     932/932         _INTERNALf89c2761::IntegrateStressForElems(Domain&, double*, double*, double*, double*, int, int) [6]
                 0.00    0.00    1864/2797        CommRecv(Domain&, int, int, int, int, int, bool, bool) [19]
                 0.00    0.00    1864/2797        CommSend(Domain&, int, int, double& (Domain::**)(int), int, int, int, bool, bool) [20]
                 0.00    0.00     932/933         CommSBN(Domain&, int, double& (Domain::**)(int)) [21]
                 0.00    0.00     932/932         CommSyncPosVel(Domain&) [22]
 -----------------------------------------------
-                7.28    0.00   10252/10252       main [1]
-[3]     28.7    7.28    0.00   10252         _INTERNALf89c2761::EvalEOSForElems(Domain&, double*, int, int*, int) [3]
+                6.69    0.00   10252/10252       main [1]
+[3]     27.6    6.69    0.00   10252         _INTERNALf89c2761::EvalEOSForElems(Domain&, double*, int, int*, int) [3]
 -----------------------------------------------
-                4.01    0.00     932/932         _INTERNALf89c2761::LagrangeNodal(Domain&) [2]
-[4]     15.8    4.01    0.00     932         _INTERNALf89c2761::CalcFBHourglassForceForElems(Domain&, double*, double*, double*, double*, double*, double*, double*, double, int, int) [4]
+                3.67    0.00     932/932         _INTERNALf89c2761::LagrangeNodal(Domain&) [2]
+[4]     15.1    3.67    0.00     932         _INTERNALf89c2761::CalcFBHourglassForceForElems(Domain&, double*, double*, double*, double*, double*, double*, double*, double, int, int) [4]
 -----------------------------------------------
-                2.82    0.00     932/932         main [1]
-[5]     11.1    2.82    0.00     932         CalcKinematicsForElems(Domain&, double, int) [5]
+                2.69    0.00     932/932         main [1]
+[5]     11.1    2.69    0.00     932         CalcKinematicsForElems(Domain&, double, int) [5]
 -----------------------------------------------
-                2.26    0.00     932/932         _INTERNALf89c2761::LagrangeNodal(Domain&) [2]
-[6]      8.9    2.26    0.00     932         _INTERNALf89c2761::IntegrateStressForElems(Domain&, double*, double*, double*, double*, int, int) [6]
+                2.16    0.00     932/932         _INTERNALf89c2761::LagrangeNodal(Domain&) [2]
+[6]      8.9    2.16    0.00     932         _INTERNALf89c2761::IntegrateStressForElems(Domain&, double*, double*, double*, double*, int, int) [6]
 -----------------------------------------------
-                1.53    0.00     932/932         main [1]
-[7]      6.0    1.53    0.00     932         _INTERNALf89c2761::CalcMonotonicQGradientsForElems(Domain&) [7]
+                1.65    0.00     932/932         main [1]
+[7]      6.8    1.65    0.00     932         _INTERNALf89c2761::CalcMonotonicQGradientsForElems(Domain&) [7]
 -----------------------------------------------
-                0.80    0.00   10252/10252       main [1]
-[8]      3.2    0.80    0.00   10252         _INTERNALf89c2761::CalcMonotonicQRegionForElems(Domain&, int, double) [8]
+                0.65    0.00   10252/10252       main [1]
+[8]      2.7    0.65    0.00   10252         _INTERNALf89c2761::CalcMonotonicQRegionForElems(Domain&, int, double) [8]
 -----------------------------------------------
                                                  <spontaneous>
-[9]      1.5    0.38    0.00                 __libm_cbrt_l9 [9]
+[9]      2.1    0.51    0.00                 __libm_cbrt_l9 [9]
 -----------------------------------------------
                 0.00    0.00       1/27001       __libc_csu_init [108]
                 0.00    0.00   27000/27001       Domain::Domain(int, int, int, int, int, int, int, int, int) [35]

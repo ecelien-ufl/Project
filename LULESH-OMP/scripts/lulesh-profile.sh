@@ -23,7 +23,9 @@ do
                 GMONOUTS="gmon.out-${NNODES[$NN]}nodes-${NTASKS[$NT]}tasks-${NTHREADS}cores-*"
                 GMONDIR="${NNODES[$NN]}nodes-${NTASKS[$NT]}tasks-${NTHREADS}cores"
                 GPROFFILE="gprof-${NNODES[$NN]}nodes-${NTASKS[$NT]}tasks-${NTHREADS}cores.txt"
+                DOTFILE="gprof-${NNODES[$NN]}nodes-${NTASKS[$NT]}tasks-${NTHREADS}cores.png"
                 gprof $BINARY $GMONOUTS >> $GPROFFILE
+                gprof $BINARY $GMONOUTS | ../../gprof2dot.py --strip --wrap | dot -Tpng -o $DOTFILE
                 mkdir $GMONDIR
                 mv $GMONOUTS ./$GMONDIR
             fi

@@ -20,7 +20,7 @@ Run completed:
         TotalAbsDiff = 1.192097e-08
         MaxRelDiff   = 3.735016e-14
 
-Elapsed time         =         66 (s)
-Grind time (us/z/c)  = 0.77868076 (per dom)  ( 66.121677 overall)
-FOM                  =   34674.03 (z/s)
+Elapsed time         =         64 (s)
+Grind time (us/z/c)  = 0.75887709 (per dom)  ( 64.440048 overall)
+FOM                  =  35578.884 (z/s)
 

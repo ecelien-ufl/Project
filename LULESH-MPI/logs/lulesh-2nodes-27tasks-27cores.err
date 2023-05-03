@@ -1,2 +1,1 @@
 srun: Warning: can't honor --ntasks-per-node set to 14 which doesn't match the requested tasks 27 with the number of requested nodes 2. Ignoring --ntasks-per-node.
-[c0711a-s26.ufhpc:33766] common_ucx.c:223  Error: ucp_disconnect_nb(5) failed: Connection reset by remote peer
