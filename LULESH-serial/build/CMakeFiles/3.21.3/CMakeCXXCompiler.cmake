@@ -16,16 +16,16 @@ set(CMAKE_CXX23_COMPILE_FEATURES "")
 set(CMAKE_CXX_PLATFORM_ID "Linux")
 set(CMAKE_CXX_SIMULATE_ID "GNU")
 set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "")
-set(CMAKE_CXX_SIMULATE_VERSION "8.2.0")
+set(CMAKE_CXX_SIMULATE_VERSION "9.3.0")
 
 
 
 
-set(CMAKE_AR "/usr/bin/ar")
+set(CMAKE_AR "/apps/python/3.8/bin/ar")
 set(CMAKE_CXX_COMPILER_AR "")
-set(CMAKE_RANLIB "/usr/bin/ranlib")
+set(CMAKE_RANLIB "/apps/python/3.8/bin/ranlib")
 set(CMAKE_CXX_COMPILER_RANLIB "")
-set(CMAKE_LINKER "/usr/bin/ld")
+set(CMAKE_LINKER "/apps/python/3.8/bin/ld")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCXX )
 set(CMAKE_CXX_COMPILER_LOADED 1)
@@ -85,7 +85,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/apps/compilers/intel/2020/0.166/mkl/include;/apps/compilers/intel/2020/0.166/tbb/include;/apps/compilers/intel/2020/0.166/compilers_and_libraries_2020.0.166/linux/compiler/include/intel64;/apps/compilers/intel/2020/0.166/compilers_and_libraries_2020.0.166/linux/compiler/include/icc;/apps/compilers/intel/2020/0.166/compilers_and_libraries_2020.0.166/linux/compiler/include;/apps/eb/software/GCCcore/8.2.0/include/c++/8.2.0;/apps/eb/software/GCCcore/8.2.0/include/c++/8.2.0/x86_64-pc-linux-gnu;/apps/eb/software/GCCcore/8.2.0/include/c++/8.2.0/backward;/usr/local/include;/apps/eb/software/GCCcore/8.2.0/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include;/apps/eb/software/GCCcore/8.2.0/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include-fixed;/apps/eb/software/GCCcore/8.2.0/include;/usr/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/apps/compilers/intel/2020/0.166/mkl/include;/apps/compilers/intel/2020/0.166/tbb/include;/apps/compilers/intel/2020/0.166/compilers_and_libraries_2020.0.166/linux/compiler/include/intel64;/apps/compilers/intel/2020/0.166/compilers_and_libraries_2020.0.166/linux/compiler/include/icc;/apps/compilers/intel/2020/0.166/compilers_and_libraries_2020.0.166/linux/compiler/include;/apps/python/3.8/x86_64-conda-linux-gnu/include/c++/9.3.0;/apps/python/3.8/x86_64-conda-linux-gnu/include/c++/9.3.0/x86_64-conda-linux-gnu;/apps/python/3.8/x86_64-conda-linux-gnu/include/c++/9.3.0/backward;/usr/local/include;/apps/python/3.8/lib/gcc/x86_64-conda-linux-gnu/9.3.0/include;/apps/python/3.8/lib/gcc/x86_64-conda-linux-gnu/9.3.0/include-fixed;/apps/python/3.8/include;/usr/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "imf;svml;irng;m;ipgo;decimal;cilkrts;stdc++;gcc;gcc_s;irc;svml;c;gcc;gcc_s;irc_s;dl;c")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/apps/compilers/intel/2020/0.166/compilers_and_libraries/linux/lib64;/apps/compilers/intel/2020/0.166/compilers_and_libraries/linux/lib/intel64;/apps/compilers/intel/2020/0.166/mkl/lib/intel64;/apps/compilers/intel/2020/0.166/ipp/lib/intel64;/apps/compilers/intel/2020/0.166/tbb/lib/intel64/gcc4.4;/apps/compilers/intel/2020/0.166/compilers_and_libraries_2020.0.166/linux/compiler/lib/intel64_lin;/apps/eb/software/GCCcore/8.2.0/lib/gcc/x86_64-pc-linux-gnu/8.2.0;/apps/eb/software/GCCcore/8.2.0/lib64;/lib64;/usr/lib64;/apps/eb/software/GCCcore/8.2.0/lib;/lib;/usr/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/apps/compilers/intel/2020/0.166/compilers_and_libraries/linux/lib64;/apps/compilers/intel/2020/0.166/compilers_and_libraries/linux/lib/intel64;/apps/compilers/intel/2020/0.166/mkl/lib/intel64;/apps/compilers/intel/2020/0.166/ipp/lib/intel64;/apps/compilers/intel/2020/0.166/tbb/lib/intel64/gcc4.4;/apps/compilers/intel/2020/0.166/compilers_and_libraries_2020.0.166/linux/compiler/lib/intel64_lin;/apps/python/3.8/lib/gcc/x86_64-conda-linux-gnu/9.3.0;/apps/python/3.8/lib/gcc;/apps/python/3.8/x86_64-conda-linux-gnu/lib;/apps/python/3.8/x86_64-conda-linux-gnu/sysroot/lib64;/apps/python/3.8/x86_64-conda-linux-gnu/sysroot/lib;/apps/python/3.8/x86_64-conda-linux-gnu/sysroot/usr/lib64;/apps/python/3.8/x86_64-conda-linux-gnu/sysroot/usr/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

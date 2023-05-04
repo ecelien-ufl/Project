@@ -15,4 +15,4 @@
 export OMP_NUM_THREADS=1
 module load intel openmpi
 export GMON_OUT_PREFIX=gmon.out-serial
-./build/lulesh2.0 -g
+./build/lulesh2.0
